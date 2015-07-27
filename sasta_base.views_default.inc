@@ -50,11 +50,11 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'col-md-6 col-sm-6 col-xs-12 col-lg-6';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Связь: Содержимое: Sections (field_sections) */
+  /* Relationship: Content: Sections (field_sections) */
   $handler->display->display_options['relationships']['field_sections_tid']['id'] = 'field_sections_tid';
   $handler->display->display_options['relationships']['field_sections_tid']['table'] = 'field_data_field_sections';
   $handler->display->display_options['relationships']['field_sections_tid']['field'] = 'field_sections_tid';
-  /* Поле: Поле: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -69,7 +69,7 @@ function sasta_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
-  /* Поле: Термин таксономии: Term icon */
+  /* Field: Taxonomy term: Term icon */
   $handler->display->display_options['fields']['field_term_icon']['id'] = 'field_term_icon';
   $handler->display->display_options['fields']['field_term_icon']['table'] = 'field_data_field_term_icon';
   $handler->display->display_options['fields']['field_term_icon']['field'] = 'field_term_icon';
@@ -82,7 +82,7 @@ function sasta_base_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -97,7 +97,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'red-bg red-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Поле: Глобальный: Пользовательский текст */
+  /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -108,12 +108,12 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
-  /* Критерий сортировки: Содержимое: Дата публикации */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Контекстный фильтр: Содержимое: Имеет идентификатор термина таксономии (с глубиной) */
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
   $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
   $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
@@ -123,14 +123,14 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['term_node_tid_depth']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '2';
-  /* Критерий фильтра: Содержимое: Опубликовано */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Критерий фильтра: Содержимое: Тип */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -170,11 +170,12 @@ function sasta_base_views_default_views() {
     t('‹ предыдущая'),
     t('следующая ›'),
     t('последняя »'),
-    t('термин из field_sections'),
+    t('term from field_sections'),
     t('[field_term_icon]<h3>[title]</h3>'),
     t('<div class="ajax-element-loading-overlay"></div>'),
     t('Все'),
     t('Block'),
+    t('more'),
     t('Фрагмент панели'),
     t('Представления-Фрагменты'),
   );
@@ -210,16 +211,16 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
   $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_default';
   $handler->display->display_options['row_plugin'] = 'node';
-  /* Связь: Nodequeue: Очередь */
+  /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
-  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
-    'front_slider' => 'front_slider',
+    'frontpage_slider' => 'frontpage_slider',
   );
-  /* Поле: Поле: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -234,26 +235,22 @@ function sasta_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  /* Критерий сортировки: Nodequeue: Положение */
+  /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
   $handler->display->display_options['sorts']['position']['field'] = 'position';
   $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
-  /* Критерий фильтра: Содержимое: Опубликован или админ */
+  /* Filter criterion: Content: Published or admin */
   $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['table'] = 'node';
   $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['group'] = 0;
   $handler->display->display_options['filters']['status_extra']['expose']['operator'] = FALSE;
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'nodequeue/1';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -274,9 +271,9 @@ function sasta_base_views_default_views() {
     t('Сортировать по'),
     t('По возрастанию'),
     t('По убыванию'),
-    t('список'),
-    t('Page'),
+    t('queue'),
     t('Block'),
+    t('more'),
   );
   $export['front_slider'] = $view;
 
@@ -314,7 +311,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Поле: Поле: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -334,7 +331,7 @@ function sasta_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
-  /* Поле: Содержимое: Date event */
+  /* Field: Content: Date event */
   $handler->display->display_options['fields']['field_date_event']['id'] = 'field_date_event';
   $handler->display->display_options['fields']['field_date_event']['table'] = 'field_data_field_date_event';
   $handler->display->display_options['fields']['field_date_event']['field'] = 'field_date_event';
@@ -352,7 +349,7 @@ function sasta_base_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -365,19 +362,19 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'news-teaser-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Критерий сортировки: Содержимое: Дата публикации */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Критерий фильтра: Содержимое: Опубликовано */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Критерий фильтра: Содержимое: Тип */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -406,7 +403,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Поле: Поле: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -426,7 +423,7 @@ function sasta_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
-  /* Поле: Содержимое: Date event */
+  /* Field: Content: Date event */
   $handler->display->display_options['fields']['field_date_event']['id'] = 'field_date_event';
   $handler->display->display_options['fields']['field_date_event']['table'] = 'field_data_field_date_event';
   $handler->display->display_options['fields']['field_date_event']['field'] = 'field_date_event';
@@ -444,7 +441,7 @@ function sasta_base_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -457,7 +454,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'news-teaser-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Поле: Содержимое: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -484,6 +481,7 @@ function sasta_base_views_default_views() {
     t('следующая ›'),
     t('последняя »'),
     t('Блок новостей'),
+    t('more'),
     t('Страница новостей'),
   );
   $export['news'] = $view;
@@ -517,11 +515,11 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
   $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_2-carousel';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Связь: Entity Reference: Связывающая сущность */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_subproducts_node']['id'] = 'reverse_field_subproducts_node';
   $handler->display->display_options['relationships']['reverse_field_subproducts_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_subproducts_node']['field'] = 'reverse_field_subproducts_node';
-  /* Поле: Поле: Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -536,12 +534,12 @@ function sasta_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
-  /* Критерий сортировки: Содержимое: Дата публикации */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Контекстный фильтр: Содержимое: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -552,7 +550,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Критерий фильтра: Содержимое: Опубликовано */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -571,9 +569,10 @@ function sasta_base_views_default_views() {
     t('Сортировать по'),
     t('По возрастанию'),
     t('По убыванию'),
-    t('Содержимое ссылается на Содержимое через field_subproducts'),
+    t('Content referencing Content from field_subproducts'),
     t('Все'),
     t('Block'),
+    t('more'),
   );
   $export['subporudcts_block'] = $view;
 
@@ -617,7 +616,7 @@ function sasta_base_views_default_views() {
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -626,7 +625,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Поле: Содержимое: Sections */
+  /* Field: Content: Sections */
   $handler->display->display_options['fields']['field_sections']['id'] = 'field_sections';
   $handler->display->display_options['fields']['field_sections']['table'] = 'field_data_field_sections';
   $handler->display->display_options['fields']['field_sections']['field'] = 'field_sections';
@@ -638,19 +637,19 @@ function sasta_base_views_default_views() {
     'field_multiple_limit_offset' => '0',
   );
   $handler->display->display_options['fields']['field_sections']['delta_offset'] = '0';
-  /* Критерий сортировки: Содержимое: Дата публикации */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Критерий фильтра: Содержимое: Опубликовано */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Критерий фильтра: Содержимое: Тип */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -689,6 +688,7 @@ function sasta_base_views_default_views() {
     t('следующая ›'),
     t('последняя »'),
     t('Entity Reference'),
+    t('more'),
   );
   $export['subproducts'] = $view;
 
@@ -720,7 +720,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Поле: Термин таксономии: ID термина */
+  /* Field: Taxonomy term: Term ID */
   $handler->display->display_options['fields']['tid']['id'] = 'tid';
   $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['tid']['field'] = 'tid';
@@ -728,7 +728,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['tid']['separator'] = '';
-  /* Поле: Термин таксономии: Term icon */
+  /* Field: Taxonomy term: Term icon */
   $handler->display->display_options['fields']['field_term_icon']['id'] = 'field_term_icon';
   $handler->display->display_options['fields']['field_term_icon']['table'] = 'field_data_field_term_icon';
   $handler->display->display_options['fields']['field_term_icon']['field'] = 'field_term_icon';
@@ -740,7 +740,7 @@ function sasta_base_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Поле: Термин таксономии: Имя */
+  /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -754,14 +754,14 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  /* Критерий фильтра: Словарь таксономии: Машинное имя */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'category' => 'category',
   );
-  /* Критерий фильтра: Термин таксономии: Родительский термин */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
@@ -781,6 +781,7 @@ function sasta_base_views_default_views() {
     t('.'),
     t('[field_term_icon]<div class="filter-name">[name]</div>'),
     t('Block'),
+    t('more'),
   );
   $export['taxonomy_filter'] = $view;
 
@@ -820,19 +821,19 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'последняя »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Поле: Содержимое: Заголовок */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Критерий сортировки: Содержимое: Дата публикации */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Контекстный фильтр: Содержимое: Имеет идентификатор термина таксономии */
+  /* Contextual filter: Content: Has taxonomy term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
@@ -845,7 +846,7 @@ function sasta_base_views_default_views() {
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  /* Критерий фильтра: Содержимое: Опубликовано */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -878,6 +879,7 @@ function sasta_base_views_default_views() {
     t('Все кухни'),
     t('%1'),
     t('Page'),
+    t('more'),
     t('Block'),
   );
   $export['taxonomy_terms'] = $view;

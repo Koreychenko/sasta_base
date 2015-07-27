@@ -246,7 +246,7 @@ function sasta_base_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'bootstrap:front_layout';
+  $display->layout = 'frontpage';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -276,6 +276,7 @@ function sasta_base_default_page_manager_pages() {
         'offset_type' => 'col-lg-offset',
         'offset_size' => '0',
       ),
+      'slider' => NULL,
     ),
     'left' => array(
       'style' => 'bootstrap_region',
@@ -296,109 +297,40 @@ function sasta_base_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-d9a0d89f-f7df-4be9-b901-72bb77569daf';
-    $pane->panel = 'left_bottom';
-    $pane->type = 'block';
-    $pane->subtype = 'views-news-block_2';
+    $pane->pid = 'new-ccc1d708-3cbd-4f62-8c08-cdeacbbf46ff';
+    $pane->panel = 'slider';
+    $pane->type = 'views';
+    $pane->subtype = 'front_slider';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Новости',
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
-      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'd9a0d89f-f7df-4be9-b901-72bb77569daf';
-    $display->content['new-d9a0d89f-f7df-4be9-b901-72bb77569daf'] = $pane;
-    $display->panels['left_bottom'][0] = 'new-d9a0d89f-f7df-4be9-b901-72bb77569daf';
-    $pane = new stdClass();
-    $pane->pid = 'new-fe77abaf-75f6-4530-9d32-9f8cc6b92831';
-    $pane->panel = 'left_middle';
-    $pane->type = 'block';
-    $pane->subtype = 'block-5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'fe77abaf-75f6-4530-9d32-9f8cc6b92831';
-    $display->content['new-fe77abaf-75f6-4530-9d32-9f8cc6b92831'] = $pane;
-    $display->panels['left_middle'][0] = 'new-fe77abaf-75f6-4530-9d32-9f8cc6b92831';
-    $pane = new stdClass();
-    $pane->pid = 'new-d43dd67c-b1bd-44f5-9d10-ab69d21b4d4a';
-    $pane->panel = 'right_bottom';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p><span class="green-bg inline-title">О компании</span></p>
-
-<p>Фабрика "Альпина" производит различную мебель: кухонные столы, обеденные столы, стулья, мягкую и кухонную мебель. "Альпина", основанная в 2002 году в Тюмени, на сегодняшний день является успешно развивающимся предприятием. Подробнее познакомиться с компанией</p>
-
-<p><span class="inline-title red-bg">Мы делаем вам выгодное предложение</span></p>
-
-<p>Фабрика "Альпина" производит различную мебель: кухонные столы, обеденные столы, стулья, мягкую и кухонную мебель. "Альпина", основанная в 2002 году в Тюмени, на сегодняшний день является успешно развивающимся предприятием. Подробнее познакомиться с компанией</p>
-
-<div class="row">
-<div class="col-md-6"><span class="green-bg inline-title">Гарантии</span><br />
-Мы обязательно учтем все нюансы как для небольших, так и для просторных помещений. Мы обязательно учтем все нюансы как для небольших, так и для просторных помещений. Как и на все наши товары, примутся за их решение.</div>
-
-<div class="col-md-6"><span class="green-bg inline-title">Стиль</span><br />
-Мы обязательно учтем все нюансы как для небольших, так и для просторных помещений. Мы обязательно учтем все нюансы как для небольших, так и для просторных помещений. Как и на все наши товары, примутся за их решение.</div>
-</div>
-',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'd43dd67c-b1bd-44f5-9d10-ab69d21b4d4a';
-    $display->content['new-d43dd67c-b1bd-44f5-9d10-ab69d21b4d4a'] = $pane;
-    $display->panels['right_bottom'][0] = 'new-d43dd67c-b1bd-44f5-9d10-ab69d21b4d4a';
-    $pane = new stdClass();
-    $pane->pid = 'new-12a70073-9345-41db-a98c-ff5c02c6450b';
-    $pane->panel = 'right_middle';
-    $pane->type = 'block';
-    $pane->subtype = 'menu-menu-front-menu';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '12a70073-9345-41db-a98c-ff5c02c6450b';
-    $display->content['new-12a70073-9345-41db-a98c-ff5c02c6450b'] = $pane;
-    $display->panels['right_middle'][0] = 'new-12a70073-9345-41db-a98c-ff5c02c6450b';
+    $pane->uuid = 'ccc1d708-3cbd-4f62-8c08-cdeacbbf46ff';
+    $display->content['new-ccc1d708-3cbd-4f62-8c08-cdeacbbf46ff'] = $pane;
+    $display->panels['slider'][0] = 'new-ccc1d708-3cbd-4f62-8c08-cdeacbbf46ff';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

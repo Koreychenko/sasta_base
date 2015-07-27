@@ -20,6 +20,9 @@ function sasta_base_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "panels" && $api == "layouts") {
     return array("version" => "1");
   }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -27,6 +30,39 @@ function sasta_base_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function sasta_base_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function sasta_base_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: frontpage_slider
+  $nodequeues['frontpage_slider'] = array(
+    'name' => 'frontpage_slider',
+    'title' => 'Frontpage slider',
+    'subqueue_title' => '',
+    'size' => 0,
+    'link' => 'Добавить в слайдер на главной',
+    'link_remove' => 'Удалить из слайдера на главной',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 1,
+    'reference' => 0,
+    'reverse' => 0,
+    'insert_at_front' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'slider',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
 }
 
 /**
@@ -69,28 +105,7 @@ function sasta_base_image_default_styles() {
         ),
         'weight' => -10,
       ),
-      5 => array(
-        'name' => 'canvasactions_definecanvas',
-        'data' => array(
-          'RGB' => array(
-            'HEX' => '#ffffff',
-          ),
-          'under' => 1,
-          'exact' => array(
-            'width' => 800,
-            'height' => 600,
-            'xpos' => 'center',
-            'ypos' => 'center',
-          ),
-          'relative' => array(
-            'leftdiff' => '',
-            'rightdiff' => '',
-            'topdiff' => '',
-            'bottomdiff' => '',
-          ),
-        ),
-        'weight' => -9,
-      ),
+      5 => NULL,
     ),
   );
 
