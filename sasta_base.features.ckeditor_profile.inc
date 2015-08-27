@@ -63,9 +63,7 @@ function sasta_base_ckeditor_profile_defaults() {
         'scayt_autoStartup' => 'f',
         'html_entities' => 'f',
       ),
-      'input_formats' => array(
-        'filtered_html' => 'Filtered HTML',
-      ),
+      'input_formats' => array(),
     ),
     'CKEditor Global Profile' => array(
       'name' => 'CKEditor Global Profile',
@@ -80,21 +78,20 @@ function sasta_base_ckeditor_profile_defaults() {
         'ss' => 2,
         'toolbar' => '[
     [\'Source\'],
-    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\', \'Scayt\'],
+    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
     [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\'],
     [\'Image\',\'Media\',\'Flash\',\'Table\',\'HorizontalRule\',\'Smiley\',\'SpecialChar\',\'Iframe\'],
     \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\',\'CreateDiv\'],
     [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiLtr\',\'BidiRtl\',\'-\',\'Language\'],
-    [\'Link\',\'Unlink\',\'Anchor\',\'Linkit\'],
+    [\'Link\',\'Unlink\',\'Anchor\'],
     [\'DrupalBreak\'],
     \'/\',
     [\'Format\',\'Font\',\'FontSize\'],
     [\'TextColor\',\'BGColor\'],
-    [\'Maximize\', \'ShowBlocks\']
-]
-    ',
+    [\'Maximize\',\'ShowBlocks\']
+]',
         'expand' => 't',
         'default' => 't',
         'show_toggle' => 't',
@@ -124,7 +121,7 @@ function sasta_base_ckeditor_profile_defaults() {
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
-        'filebrowser' => 'imce',
+        'filebrowser' => 'none',
         'filebrowser_image' => '',
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',

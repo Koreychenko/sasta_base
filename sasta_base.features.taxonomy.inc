@@ -9,11 +9,19 @@
  */
 function sasta_base_taxonomy_default_vocabularies() {
   return array(
-    'category' => array(
-      'name' => 'Category',
-      'machine_name' => 'category',
-      'description' => 'Use category for multilevel hierarchy of content.',
-      'hierarchy' => 1,
+    'content_type' => array(
+      'name' => 'Тип материала',
+      'machine_name' => 'content_type',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'sections' => array(
+      'name' => 'Разделы',
+      'machine_name' => 'sections',
+      'description' => '',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
     ),

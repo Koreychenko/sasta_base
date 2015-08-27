@@ -10,15 +10,15 @@
 function sasta_base_menu_default_menu_custom() {
   $menus = array();
 
-  // Exported menu: menu-left-menu.
-  $menus['menu-left-menu'] = array(
-    'menu_name' => 'menu-left-menu',
-    'title' => 'Left menu',
+  // Exported menu: menu-footer-menu.
+  $menus['menu-footer-menu'] = array(
+    'menu_name' => 'menu-footer-menu',
+    'title' => 'Меню в подвале',
     'description' => '',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Left menu');
+  t('Меню в подвале');
 
 
   return $menus;
