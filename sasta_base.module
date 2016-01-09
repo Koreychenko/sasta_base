@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Sasta Base feature.
- */
-
-include_once 'sasta_base.features.inc';

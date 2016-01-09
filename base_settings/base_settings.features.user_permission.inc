@@ -98,15 +98,6 @@ function base_settings_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'access media browser'.
-  $permissions['access media browser'] = array(
-    'name' => 'access media browser',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: 'access rules debug'.
   $permissions['access rules debug'] = array(
     'name' => 'access rules debug',
@@ -335,14 +326,6 @@ function base_settings_user_default_permissions() {
     'module' => 'mailsystem',
   );
 
-  // Exported permission: 'administer media browser'.
-  $permissions['administer media browser'] = array(
-    'name' => 'administer media browser',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-    ),
-    'module' => 'media',
-  );
 
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
