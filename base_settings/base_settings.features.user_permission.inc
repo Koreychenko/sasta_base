@@ -326,7 +326,6 @@ function base_settings_user_default_permissions() {
     'module' => 'mailsystem',
   );
 
-
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -841,30 +840,21 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'create fieldable accordion'.
   $permissions['create fieldable accordion'] = array(
     'name' => 'create fieldable accordion',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable carousel'.
   $permissions['create fieldable carousel'] = array(
     'name' => 'create fieldable carousel',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable elements_tabs'.
   $permissions['create fieldable elements_tabs'] = array(
     'name' => 'create fieldable elements_tabs',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -880,40 +870,28 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'create fieldable fullwidth_image'.
   $permissions['create fieldable fullwidth_image'] = array(
     'name' => 'create fieldable fullwidth_image',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable gallery_6_images'.
   $permissions['create fieldable gallery_6_images'] = array(
     'name' => 'create fieldable gallery_6_images',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable paragraph'.
   $permissions['create fieldable paragraph'] = array(
     'name' => 'create fieldable paragraph',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'create fieldable slider'.
   $permissions['create fieldable slider'] = array(
     'name' => 'create fieldable slider',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -1037,30 +1015,21 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'delete fieldable accordion'.
   $permissions['delete fieldable accordion'] = array(
     'name' => 'delete fieldable accordion',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable carousel'.
   $permissions['delete fieldable carousel'] = array(
     'name' => 'delete fieldable carousel',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable elements_tabs'.
   $permissions['delete fieldable elements_tabs'] = array(
     'name' => 'delete fieldable elements_tabs',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -1076,40 +1045,28 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'delete fieldable fullwidth_image'.
   $permissions['delete fieldable fullwidth_image'] = array(
     'name' => 'delete fieldable fullwidth_image',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable gallery_6_images'.
   $permissions['delete fieldable gallery_6_images'] = array(
     'name' => 'delete fieldable gallery_6_images',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable paragraph'.
   $permissions['delete fieldable paragraph'] = array(
     'name' => 'delete fieldable paragraph',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable slider'.
   $permissions['delete fieldable slider'] = array(
     'name' => 'delete fieldable slider',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -1332,30 +1289,21 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'edit fieldable accordion'.
   $permissions['edit fieldable accordion'] = array(
     'name' => 'edit fieldable accordion',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable carousel'.
   $permissions['edit fieldable carousel'] = array(
     'name' => 'edit fieldable carousel',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable elements_tabs'.
   $permissions['edit fieldable elements_tabs'] = array(
     'name' => 'edit fieldable elements_tabs',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -1371,40 +1319,28 @@ function base_settings_user_default_permissions() {
   // Exported permission: 'edit fieldable fullwidth_image'.
   $permissions['edit fieldable fullwidth_image'] = array(
     'name' => 'edit fieldable fullwidth_image',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable gallery_6_images'.
   $permissions['edit fieldable gallery_6_images'] = array(
     'name' => 'edit fieldable gallery_6_images',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable paragraph'.
   $permissions['edit fieldable paragraph'] = array(
     'name' => 'edit fieldable paragraph',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable slider'.
   $permissions['edit fieldable slider'] = array(
     'name' => 'edit fieldable slider',
-    'roles' => array(
-      'Администратор' => 'Администратор',
-      'Редактор' => 'Редактор',
-    ),
+    'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
 

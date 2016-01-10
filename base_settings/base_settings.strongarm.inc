@@ -117,14 +117,14 @@ function base_settings_strongarm() {
     'language' => 'ru',
     'name' => 'Russian',
     'native' => 'Русский',
-    'direction' => '0',
-    'enabled' => '1',
-    'plurals' => '3',
-    'formula' => '(((($n%10)==1)&&(($n%100)!=11))?(0):((((($n%10)>=2)&&(($n%10)<=4))&&((($n%100)<10)||(($n%100)>=20)))?(1):2))',
+    'direction' => 0,
+    'enabled' => 1,
+    'plurals' => 0,
+    'formula' => '',
     'domain' => '',
     'prefix' => 'ru',
-    'weight' => '0',
-    'javascript' => '1ce3HrHFxREnmtMZrEYMEkEd-pIBzr3gTefs4j3TWq0',
+    'weight' => 0,
+    'javascript' => '',
   );
   $export['language_default'] = $strongarm;
 
@@ -200,7 +200,7 @@ function base_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'FAM7mFy0HZZc8qY6P5eJk95i8UI9I5MNFT_imjHD_dg';
+  $strongarm->value = 'QbMkhFjZ9yhR0Go5v-Kj9dAObtskIkhDlvbGbDsxwh4';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
