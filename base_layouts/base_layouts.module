@@ -1,0 +1,7 @@
+<?php
+
+function base_layouts_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'panels' && $plugin_type == 'layouts') {
+    return 'plugins/' . $plugin_type;
+  }
+}
