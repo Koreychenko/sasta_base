@@ -69,13 +69,26 @@ function base_content_types_panelizer_defaults() {
     $pane->style = array(
       'style' => 'fullwidth',
       'settings' => array(
-        'style' => '',
-        'advanced' => array(
-          'background' => '',
-          'classes' => '',
+        'row_type' => 'container',
+        'paddings' => array(
           'padding_top' => '',
           'padding_bottom' => '',
+          'padding_left' => '',
+          'padding_right' => '',
         ),
+        'height' => '',
+        'colors' => array(
+          'text_color' => '',
+          'background_color' => '',
+          'background_image' => 0,
+          'background_repeat' => 'no-repeat',
+          'background_position' => 'top-center',
+          'background_stretch' => 0,
+          'background_parallax' => 0,
+        ),
+        'header_position' => 'left',
+        'class' => '',
+        'merge_background' => 0,
       ),
     );
     $pane->css = array();
@@ -147,13 +160,26 @@ function base_content_types_panelizer_defaults() {
     $pane->style = array(
       'style' => 'fullwidth',
       'settings' => array(
-        'style' => '',
-        'advanced' => array(
-          'background' => '',
-          'classes' => '',
+        'row_type' => 'container',
+        'paddings' => array(
           'padding_top' => '',
           'padding_bottom' => '',
+          'padding_left' => '',
+          'padding_right' => '',
         ),
+        'height' => '',
+        'colors' => array(
+          'text_color' => '',
+          'background_color' => '',
+          'background_image' => 0,
+          'background_repeat' => 'no-repeat',
+          'background_position' => 'top-center',
+          'background_stretch' => 0,
+          'background_parallax' => 0,
+        ),
+        'header_position' => 'left',
+        'class' => '',
+        'merge_background' => 0,
       ),
     );
     $pane->css = array();

@@ -12,7 +12,7 @@
 ?>
 
 <div class="site-wrapper">
-  <div class="inner">
+  <div class="container">
     <div class="row">
       <div class="col-md-4 logo-block">
         <?php print $content['logo']; ?>
@@ -33,7 +33,7 @@
   </div>
 </div>
 <div class="footer">
-  <div class="inner">
+  <div class="container">
     <?php print $content['footer']; ?>
   </div>
 </div>
