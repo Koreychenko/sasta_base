@@ -44,7 +44,7 @@ function base_content_types_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'pzlmain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -59,7 +59,7 @@ function base_content_types_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-086f6121-3eb8-4855-951c-d1495285e77c';
-    $pane->panel = 'middle';
+    $pane->panel = 'main_content';
     $pane->type = 'views_panes';
     $pane->subtype = 'articles-panel_pane_1';
     $pane->shown = TRUE;
@@ -97,7 +97,7 @@ function base_content_types_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '086f6121-3eb8-4855-951c-d1495285e77c';
     $display->content['new-086f6121-3eb8-4855-951c-d1495285e77c'] = $pane;
-    $display->panels['middle'][0] = 'new-086f6121-3eb8-4855-951c-d1495285e77c';
+    $display->panels['main_content'][0] = 'new-086f6121-3eb8-4855-951c-d1495285e77c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-086f6121-3eb8-4855-951c-d1495285e77c';
   $handler->conf['display'] = $display;
@@ -140,7 +140,7 @@ function base_content_types_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'pzlmain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -155,7 +155,7 @@ function base_content_types_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-bb0c2316-5cd2-48bc-a8db-f47df1e8334b';
-    $pane->panel = 'middle';
+    $pane->panel = 'main_content';
     $pane->type = 'views_panes';
     $pane->subtype = 'news-panel_pane_1';
     $pane->shown = TRUE;
@@ -193,7 +193,7 @@ function base_content_types_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'bb0c2316-5cd2-48bc-a8db-f47df1e8334b';
     $display->content['new-bb0c2316-5cd2-48bc-a8db-f47df1e8334b'] = $pane;
-    $display->panels['middle'][0] = 'new-bb0c2316-5cd2-48bc-a8db-f47df1e8334b';
+    $display->panels['main_content'][0] = 'new-bb0c2316-5cd2-48bc-a8db-f47df1e8334b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-bb0c2316-5cd2-48bc-a8db-f47df1e8334b';
   $handler->conf['display'] = $display;

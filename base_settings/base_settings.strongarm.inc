@@ -200,7 +200,7 @@ function base_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'GqUlYKvp5gPivO7HxRSEwCoGw-45V2ywhrQKMQHwaOs';
+  $strongarm->value = 'C6ZoDh5Au6rsK9O-BW0aG19SYcMUEk5GtEbD7O2tlAQ';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();

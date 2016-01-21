@@ -30,12 +30,13 @@ function base_content_types_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'pzlmain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'main_content' => NULL,
     ),
   );
   $display->cache = array();
@@ -45,7 +46,7 @@ function base_content_types_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-851d7ca4-6d56-44bc-9133-329caeee3f57';
-    $pane->panel = 'middle';
+    $pane->panel = 'main_content';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_article_text';
     $pane->shown = TRUE;
@@ -97,7 +98,7 @@ function base_content_types_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = '851d7ca4-6d56-44bc-9133-329caeee3f57';
     $display->content['new-851d7ca4-6d56-44bc-9133-329caeee3f57'] = $pane;
-    $display->panels['middle'][0] = 'new-851d7ca4-6d56-44bc-9133-329caeee3f57';
+    $display->panels['main_content'][0] = 'new-851d7ca4-6d56-44bc-9133-329caeee3f57';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
@@ -123,13 +124,14 @@ function base_content_types_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'pzlmain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
       'middle' => NULL,
+      'main_content' => NULL,
     ),
   );
   $display->cache = array();
@@ -139,7 +141,7 @@ function base_content_types_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-20f9f47d-4a75-49aa-aa29-e340629639fc';
-    $pane->panel = 'middle';
+    $pane->panel = 'main_content';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_news_text';
     $pane->shown = TRUE;
@@ -188,7 +190,7 @@ function base_content_types_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = '20f9f47d-4a75-49aa-aa29-e340629639fc';
     $display->content['new-20f9f47d-4a75-49aa-aa29-e340629639fc'] = $pane;
-    $display->panels['middle'][0] = 'new-20f9f47d-4a75-49aa-aa29-e340629639fc';
+    $display->panels['main_content'][0] = 'new-20f9f47d-4a75-49aa-aa29-e340629639fc';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
@@ -214,12 +216,13 @@ function base_content_types_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'pzlmain';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'main_content' => NULL,
     ),
   );
   $display->cache = array();
@@ -229,7 +232,7 @@ function base_content_types_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-9f006677-ab6e-4d7f-9dec-48c411bd74dd';
-    $pane->panel = 'middle';
+    $pane->panel = 'main_content';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_page_text';
     $pane->shown = TRUE;
@@ -278,7 +281,7 @@ function base_content_types_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = '9f006677-ab6e-4d7f-9dec-48c411bd74dd';
     $display->content['new-9f006677-ab6e-4d7f-9dec-48c411bd74dd'] = $pane;
-    $display->panels['middle'][0] = 'new-9f006677-ab6e-4d7f-9dec-48c411bd74dd';
+    $display->panels['main_content'][0] = 'new-9f006677-ab6e-4d7f-9dec-48c411bd74dd';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-9f006677-ab6e-4d7f-9dec-48c411bd74dd';
   $panelizer->display = $display;
